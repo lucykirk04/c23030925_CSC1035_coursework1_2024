@@ -50,7 +50,6 @@ public class CarModel {
                 ", type='" + type + '\'' +
                 '}';
 }
-
 }
 
 
