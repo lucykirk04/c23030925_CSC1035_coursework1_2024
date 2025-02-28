@@ -42,18 +42,14 @@ public class CarModel {
 
 @Override
     public String toString() {
-        return "CarModel{" +
-                "name='" + name + '\'' +
-                ", weight=" + weight +
-                ", price=" + price +
-                ", numberSold=" + numberSold +
-                ", type='" + type + '\'' +
-                '}';
+        return "CarModel{name='" + name + "', weight=" +weight +", price=" + price +", numberSold=" +numberSold +", type='" +type +"'}";
 }
     public static void main(String[] args) {
-        CarModel carModel = new CarModel("BMW 3 Series.", 2055, 39045, 100, "Saloon");
+        CarModel carModel = new CarModel("BMW 3 Series", 2055, 39045, 100, "Saloon");
         System.out.println(carModel);
-        System.out.println("Total Revenue: pounds" + carModel.getTotalRevenue());}
+        System.out.println("Total Revenue: pounds" + carModel.getTotalRevenue());
+    }
+
 }
 
 
