@@ -5,7 +5,7 @@ public class Manufacturer {
     private String name;
     private List<CarModel> carModels;
 
-    public Manufacturer(){
+    public Manufacturer() {
         System.out.println("Manufacturer");
         this.carModels = new ArrayList<>();
     }
@@ -15,21 +15,26 @@ public class Manufacturer {
         this.carModels = new ArrayList<>();
     }
 
-    public void setName(String name){this.name = name;}
-    public String getName(){ return name; }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName(){
+        return name; }
 
     public void addCarModel(CarModel carModel){
     carModels.add(carModel);
     }
+
     public List<CarModel> getCarModels(){
     return carModels;}
 
     public CarModel getMostExpensiveModel() {
         if (carModels.isEmpty()) return null;
-        CarModel carModel = carModels.get(0);
+        CarModel expensive = carModels.get(0);
         for (CarModel model : carModels) {
             if (model.getPrice() > expensive.getPrice()) {
-                exensive = model;
+                expensive = model;
             }
         }
 
@@ -48,13 +53,15 @@ public class Manufacturer {
 
     }
 
+    @Override
     public String toString() {
         return "Manufacturer{name='" + name + "', carModels=" + carModels + "}";
     }
 
 }
 
-public void main() {
+public static void main(String[] args){
+
 }
 
 
