@@ -5,9 +5,32 @@ public class Car{
     private int numberSold;
     private String type; // hatchback, saloon, estate
 
-    public car(){
-        system.out.println("Creating a car");
-        // Constructor sets up all internal fields of a car
     }
+
+    public Car(String name, double weight, double price, int numberSold, String type){
+        this.name = name;
+        this.weight = weight;
+        this.price = price;
+        this.numberSold = numberSold;
+        this.type = type;
+
+    }
+
+    public String getName(){
+        return name;
+    }
+    public double getWeight(){
+        return weight;
+    }
+    public double getPrice(){
+        return price;
+    }
+    public int getNumberSold(){
+        return numberSold;
+    }
+    public String getType(){
+        return type;
+    }
+
 
 }
